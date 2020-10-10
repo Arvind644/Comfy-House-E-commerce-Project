@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Comfy House</title>
-	<!-- font awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!--custom css -->
-	<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-<!-- navbar -->
-<nav class="navbar">
-	<div class="navbar-center">
-		<span class="nav-icon">
-			<i class="fa fa-bars"></i>
-		</span>
-		<img src="./Images/logo.svg" alt="store logo">
-		<div class="cart-btn">
-			<span class="nav-icon">
-				<i class="fa fa-cart-plus"></i>
-			</span>
-			<div class="cart-items">0</div>
-		</div>
-	</div>
-</nav>
-<!-- end of navbar -->
+  <head>
+    <title>Comfy House</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--custom css -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <span class="nav-icon">
+          <!-- for the dropdown ready-to-use package is on boostrap -->
+          <i class="fa fa-bars"></i>
+        </span>
+        <!-- putting the img in a tag will give it the accessibility to move haha -->
+        <!-- as the logo set at the middle, customers will have a natural behaviour of clicking on it, instead of do nothing, i think it will be the best to let them direct back to the top -->
+        <a href="#hero">
+          <img src="./Images/logo.svg" alt="store logo" />
+        </a>
+        <div class="cart-btn">
+          <span class="nav-icon">
+            <i class="fa fa-cart-plus"></i>
+          </span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
 
-<!-- hero -->
-<header class="hero">
-	<div class="banner">
-		<h1 class="banner-title">Furniture Collection</h1>
-		<button class="banner-btn">shop now</button>
-	</div>
-</header>
-<!-- end of hero -->
+    <!-- hero -->
+    <header class="hero" id="hero">
+      <div class="banner">
+        <h1 class="banner-title">Furniture Collection</h1>
+        <!-- here you can link the shop-now to the bottom by adding an id to the section -->
+        <a href="#products" class="banner-btn">shop now</a>
+      </div>
+    </header>
+    <!-- end of hero -->
 
-<!-- products -->
-<section class="products">
-	<div class="section-title">
-		<h2>our products</h2>
-	</div>
-	<div class="products-center">
-		<!-- single products 
+    <!-- products -->
+    <section class="products" id="products">
+      <div class="section-title">
+        <h2>our products</h2>
+      </div>
+      <div class="products-center">
+        <!-- single products 
 		<article class="product">
 			<div class="img-container">
 				<img src="./Images/product-1.jpeg" alt="product" class="product-img">
@@ -53,20 +62,20 @@
 			<h4>$16</h4>
 		</article>
 		 end of single products -->
-	</div>
-</section>
-<!-- end of products -->
+      </div>
+    </section>
+    <!-- end of products -->
 
-<!-- cart -->
-	<div class="cart-overlay">
-		<div class="cart">
-			<span class="close-cart">
-				<i class="fa fa-window-close"></i>
-			</span>
-			<h2>your cart</h2>
-			<div class="cart-content">
-				<!-- cart item -->
-			<!--	<div class="cart-item">
+    <!-- cart -->
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fa fa-window-close"></i>
+        </span>
+        <h2>your cart</h2>
+        <div class="cart-content">
+          <!-- cart item -->
+          <!--	<div class="cart-item">
 					<img src="./Images/product-1.jpeg" alt="product">
 					<div>
 						<h4>queen bed</h4>
@@ -79,16 +88,29 @@
 						<i class="fa fa-chevron-down"></i>
 					</div>
 				</div>  -->
-				<!-- end of cart item -->
-			</div>
-			<div class="cart-footer">
-				<h3>your total : $<span class="cart-total">0</span></h3>
-				<button class="clear-cart banner-btn">clear cart</button>
-			</div>
-		</div>
-	</div>
+          <!-- end of cart item -->
+        </div>
+        <div class="cart-footer">
+          <h3>your total : $<span class="cart-total">0</span></h3>
+          <div class="cart-buttons">
+            <button class="clear-cart banner-btn">clear cart</button>
 
-<!-- end of cart-->
-<script type="text/javascript" src="app.js"></script>
-</body>
+            <!-- i added a button for buying but not yet connected through js, just an idea that you will have a more complete view of your app, even tho now you know no one will really buy things on this page, but having the buy button will give you some sort of ideas on design -->
+            <button class="buy-cart">Get them now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer for the frontpage just an idea I will leave it dummy but you can add on the icon like facebook link or other social media links here-->
+    <section id="footer">
+      <div class="contact">
+        <span> Email: test@test.com</span>
+        <span> Phone: 01-23456789</span>
+      </div>
+    </section>
+
+    <!-- end of cart-->
+    <script type="text/javascript" src="app.js"></script>
+  </body>
 </html>

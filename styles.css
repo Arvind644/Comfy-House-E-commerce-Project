@@ -40,6 +40,7 @@ body {
 }
 .nav-icon {
   font-size: 1.5rem;
+  cursor: pointer;
 }
 .cart-btn {
   position: relative;
@@ -75,16 +76,24 @@ body {
   letter-spacing: var(--mainSpacing);
   margin-bottom: 3rem;
 }
-.banner-btn {
-  padding: 1rem 3rem;
+.cart-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.banner-btn,
+.buy-cart {
+  padding: 1rem 2rem;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
-  font-size: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
   background: var(--primaryColor);
   color: var(--mainBlack);
   border: 1px solid var(--primaryColor);
   transition: var(--mainTransition);
   cursor: pointer;
+  text-decoration: none;
 }
 .banner-btn:hover {
   background: transparent;
@@ -259,3 +268,19 @@ body {
 }
 
 /* --------------- End of Cart ---------------- */
+
+/* footer */
+#footer {
+  width: 100%;
+  height: 4rem;
+  background-color: var(--mainGrey);
+}
+
+.contact {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* end of footer */
